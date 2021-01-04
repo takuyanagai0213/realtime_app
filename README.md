@@ -33,3 +33,6 @@
 
 ### CI/CD tool
 * circleCI
+
+### etc.
+* git-flowブランチモデルを基に開発を進行する
