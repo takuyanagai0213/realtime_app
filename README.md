@@ -23,7 +23,7 @@
 * prettier
 
 ### infrastructure
-* AWS
+* GCP
 * docker & docker-compose
 * ansible
 * terraform
