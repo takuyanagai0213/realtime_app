@@ -12,7 +12,7 @@ jobs:
       - DB_CONNECTION: ci_test
       - MYSQL_ALLOW_EMPTY_PASSWORD: true
 
-    working_directory: ~/src/web
+    working_directory: ~/
 
     steps:
       - checkout
