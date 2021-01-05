@@ -20,6 +20,7 @@ jobs:
       # Install PHP Extension
       - run: sudo docker-php-ext-install pdo_mysql
       - run: cd src/web/
+      - run: ls -la
       # Download and cache dependencies
       - restore_cache:
           keys:
