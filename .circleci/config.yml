@@ -24,7 +24,7 @@ jobs:
       - restore_cache:
           paths: ./src/web
           keys:
-          - v1-dependencies-{{ checksum "src/composer.json" }}
+          - v1-dependencies-{{ checksum "src/web/composer.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
@@ -33,7 +33,7 @@ jobs:
       - save_cache:
           paths:
             - ./src/web/vendor
-          key: v1-dependencies-{{ checksum "src/composer.json" }}
+          key: v1-dependencies-{{ checksum "src/web/composer.json" }}
 
       # run seeding
       - run: php artisan migrate
