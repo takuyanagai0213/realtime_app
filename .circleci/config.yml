@@ -12,14 +12,12 @@ jobs:
       - DB_CONNECTION: ci_test
       - MYSQL_ALLOW_EMPTY_PASSWORD: true
 
-    working_directory: ~/project
+    working_directory: ~/project/src
 
     steps:
-      - checkout
-
       # Install PHP Extension
       - run: sudo docker-php-ext-install pdo_mysql
-      - run: cd ./src
+      - checkout
       - run: ls -la
       - run: pwd
       # Download and cache dependencies
