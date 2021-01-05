@@ -38,9 +38,15 @@ jobs:
             - ./src/web/vendor
           key: v1-dependencies-{{ checksum "src/web/composer.json" }}
 
-      # run seeding
-      - run: php artisan migrate
-      - run: php artisan db:seed
-
-      # run tests!
-      - run: php ./vendor/bin/phpunit
+      - run:
+          name: do migration
+          working_directory: src/web
+          command: php artisan migrate
+      - run:
+          name: insert seed
+          working_directory: src/web
+          command: php artisan db:seed
+      - run:
+          name: do test
+          working_directory: src/web
+          command: php ./vendor/bin/phpunit
