@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.4.1-fpm
+      - image: circleci/php:7.3-node-browsers
       - image: circleci/mysql:5.7
     environment:
       - APP_DEBUG: true
