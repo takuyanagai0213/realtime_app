@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node" : true,
+    "browser" : true
+  },
+  // "parser": "babel-eslint",
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-undef" : "off",
+    "no-unused-vars": ["warn", { "vars": "all", "args" : "none"}] 
+  }
+}
