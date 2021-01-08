@@ -1,0 +1,21 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "editor.formatOnSave": true, // ファイル保存時にPrettierでフォーマット
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true // ファイル保存時にESLintでフォーマット
+  },
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "phpmd.rules": "/Users/takuya/myaaa/realtime_app/src/web/ruleset.xml",
+  "php-cs-fixer.executablePath": "/Users/takuya/myaaa/realtime_app/src/web/vendor/bin/php-cs-fixer",
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.config": "/Users/takuya/myaaa/realtime_app/src/web/.php_cs.dist",
+  "phpmd.command": "/Users/takuya/myaaa/realtime_app/src/web/vendor/bin/phpmd"
+}
